@@ -14,7 +14,7 @@ npm install asterisk-ami-client
 
 Sample Setup
 ------------
-PSTN - HT813 FXO - FreePBX - HT802 - Analogue Phone
+PSTN - HT813 FXO - HomePlug - FreePBX - HomePlug - HT802 FXS - Analogue Phone
 
 HT802: Need to send flash hook and use RFC2833
 
