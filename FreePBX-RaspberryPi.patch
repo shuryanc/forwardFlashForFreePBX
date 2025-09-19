@@ -1,0 +1,11 @@
+--- install	2024-10-17 15:27:58
++++ install_patch	2025-09-19 07:51:15
+@@ -476,6 +476,8 @@
+   cd /usr/src/asterisk*
+   sed -i 's|\(^#define DEVICE_FRAME_SIZE \).*|\164|' addons/chan_mobile.c
+   contrib/scripts/get_mp3_source.sh
++  cp -f ${PGMPATH}/res_rtp_asterisk.c res/res_rtp_asterisk.c
++  cp -f ${PGMPATH}/app.c main/app.c
+   ./configure --with-pjproject-bundled --with-jansson-bundled --with-bluetooth
+   make menuselect.makeopts
+   menuselect/menuselect --enable CORE-SOUNDS-EN-WAV --enable CORE-SOUNDS-EN-ULAW menuselect.makeopts
