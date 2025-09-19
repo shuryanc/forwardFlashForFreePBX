@@ -12,9 +12,17 @@ npm install asterisk-ami-client
 ```
 2. Apply patch for main/app.c and res/res_rtp_asterisk.c to add back code 16 from https://github.com/life-of-e/asterisk_sip_hook_flash
 
+Sample Setup
+------------
+PSTN - HT813 FXO - FreePBX - HT802 - Analogue Phone
+HT802: Need to send flash hook and use RFC2833
+HT813: Need to send flash hook to PSTN and use RFC2833
+FreePBX: Need to use RFC4733 for trunk and extension
+
 Usage
 -----
 Edit trunk and ext(optional) in the script. They are the prefix of the channels
 Execute ```bash node forwardFlash.js``` or create a service for it
 
 For raspberryPi building, make sure app.c and res_rtp_asterisk.c are updated before compiling. Or you can edit the files, copy them to the same path as install script and add a copy line like I showned in the patch. 
+
