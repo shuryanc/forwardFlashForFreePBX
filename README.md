@@ -20,7 +20,7 @@ HT802: Need to send flash hook and use RFC2833
 
 HT813: Need to send flash hook to PSTN and use RFC2833
 
-FreePBX: Tested at 17.0.19.32. Need to use RFC4733 for trunk and extension
+FreePBX: Tested at 17.0.19.32. Need to use RFC4733 for trunk and extension. Add an user in manager_custom.config (Admin -> Config Edit) that has read/write permission for the AMI login.
 
 Asterisk: Tested at 22.5.2
 
