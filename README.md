@@ -15,9 +15,16 @@ npm install asterisk-ami-client
 Sample Setup
 ------------
 PSTN - HT813 FXO - FreePBX - HT802 - Analogue Phone
+
 HT802: Need to send flash hook and use RFC2833
+
 HT813: Need to send flash hook to PSTN and use RFC2833
-FreePBX: Need to use RFC4733 for trunk and extension
+
+FreePBX: Tested at 17.0.19.32. Need to use RFC4733 for trunk and extension
+
+Asterisk: Tested at 22.5.2
+
+Operated under RaspberryPi5 8GB with latest RaspBerryPi OS.
 
 Usage
 -----
